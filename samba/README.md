@@ -1,13 +1,17 @@
 samba服务是一种高级文件共享服务，支持的操作系统平台分别是windows和linux系统
 
-SAMBA存在的目的就是实现跨平台共享
+samba存在的目的就是实现跨平台共享
+
+samba服务开启的端口分别是139和445端口
+
 ```shell
-137/udp (betbios), 138/udp
+137/udp (betbios)
+138/udp
 139/tcp
 445/tcp
 ```
 
-samba本身受selinux控制为了保证samba正常运行需要先关闭selinux
+### samba本身受selinux控制为了保证samba正常运行需要先关闭selinux
 
 
 Client --- Samba Server
