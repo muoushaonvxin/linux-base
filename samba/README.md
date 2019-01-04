@@ -1,12 +1,4 @@
-CIFS：Common Internet FileSystem
-
-SMB：Service Message Block
-
-Linux / Unix
-NetBIOS：（WINNS）
-Winbind
-LDAP（Openldap）
-
+samba服务是一种高级文件共享服务，支持的操作系统平台分别是windows和linux系统
 
 SAMBA存在的目的就是实现跨平台共享
 ```shell
