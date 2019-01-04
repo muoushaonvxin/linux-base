@@ -45,6 +45,7 @@ E:\test\web
 
 宏：变量
 
+```shell
 [shared_name]
 
 comment = 
@@ -79,7 +80,7 @@ Press enter to see a dump of your service definitions
 	New SMB password:
 	Retype new SMB password:
 	Added user eclips.
-
+```
 
 	smbclinet         smb 客户端
 
