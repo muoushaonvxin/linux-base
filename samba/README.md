@@ -30,15 +30,11 @@ UNC
 共享权限
 文件系统权限
 
-
-opennebula
-|
-|
-|
+```shell
 D:\share\tools
 Software
 E:\test\web
-
+```
 
 宏：变量
 
@@ -103,31 +99,27 @@ windows系统访问smb服务的方法如下
 
 
 
-	新建一个共享： tools ， 开放给mygrp中的所有用户吗具有读写权限，其它用户只有读权限
+新建一个共享: tools开放给mygrp中的所有用户吗具有读写权限其它用户只有读权限
 
-	[share_name]
+```shell
+[root@zhangyz ~]# vim /etc/samba/smb.conf
+[share_name]
+public = yes
+write list = @mygrp
 
-	public = yes
-	write list = @mygrp
+[tools]
+comment = 
+path = 
+guest os = yes
+write list = @mygrp
+```
 
-	[tools]
-	comment = 
-	path = 
-	guest os = yes
-	write list = @mygrp
-
-
-	samba: 基于ip的访问控制
-	iptables：
-	139， 445
-	137， 138
-
-	samba
-	hosts allow = 192.168.21. 127.            表示允许网段中的主机进行访问
-
-	samba-swat
-	web GUI
-
+samba: 基于ip的访问控制
+	
+```shell
+samba
+hosts allow = 192.168.21. 127.       # 表示允许网段中的主机进行访问
+```
 
 	yum -y install samba-3x-swat                    非独立进程
 
