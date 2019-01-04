@@ -13,11 +13,12 @@ samba服务开启的端口分别是139和445端口
 
 ### samba本身受selinux控制为了保证samba正常运行需要先关闭selinux
 
+<br/>
 
-Client --- Samba Server
+系统用户samba密码
 
-系统用户 samba密码
 安全级别: user
+
 share
 
 samba 可以关联另外一台服务器
