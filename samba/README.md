@@ -79,17 +79,28 @@ Retype new SMB password:
 Added user eclips.
 ```
 
-	smbclinet         smb 客户端
+### smbclinet 客户端
 
-	smbclient 
-	-L Netbios Name
-	-U USERNAME
-	-T
+```shell
+smbclient 
+-L Netbios Name
+-U USERNAME
+-T
+```
+<br/>
 
+linux系统访问smb服务的方法如下
 
-	mount -t cifs //192.168.231.130/tools /mnt -o username=eclips                
+```shell
+[root@zhangyz ~]# mount -t cifs //192.168.1.130/tools /mnt -o username=eclips                
+```
 
-	//192.168.231.130/tools /mnt                    cifs    credential=/etc/samba/cred.passwd 0 0
+windows系统访问smb服务的方法如下
+
+```shell
+//192.168.231.130/tools /mnt   cifs    credential=/etc/samba/cred.passwd 0 0
+```
+
 
 
 	新建一个共享： tools ， 开放给mygrp中的所有用户吗具有读写权限，其它用户只有读权限
