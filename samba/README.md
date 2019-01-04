@@ -75,11 +75,11 @@ Server role: ROLE_STANDALONE
 Press enter to see a dump of your service definitions
 
 
-	[root@test .python]# man smbpasswd
-	[root@test .python]# smbpasswd -a eclips
-	New SMB password:
-	Retype new SMB password:
-	Added user eclips.
+[root@test .python]# man smbpasswd
+[root@test .python]# smbpasswd -a eclips
+New SMB password:
+Retype new SMB password:
+Added user eclips.
 ```
 
 	smbclinet         smb 客户端
